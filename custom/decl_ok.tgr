@@ -1,0 +1,38 @@
+let
+    type number := int;
+    type integer := number;
+    type numero := integer;
+    type decimal := float;
+    type yesno := boolean;
+
+    type numarray := array [2] of number;
+    type intarray := array [3] of integer;
+    type thematrix := array [4] of intarray;
+    type threedee := array [5] of thematrix;
+    type spacetime := array [6] of array [7] of array [8] of array [9] of numero;
+
+    type floatingmatrix := array [10] of array [11] of decimal;
+
+    type scantron := array [12] of yesno;
+
+    var life : integer := 42;
+    var immature : decimal := 69.0;
+    var melissabenoistisbae : yesno := true;
+
+    var row_echelon : array[4] of array[4] of float;
+    var reduced_row_echelon : array [5] of array [5] of float;
+
+    func elementary() : number begin
+        return 1 + 1;
+    end;
+
+    func do_row_reduction() : floatingmatrix begin
+        if elementary() > 2 then
+            return row_echelon;
+        else
+            return reduced_row_echelon;
+        endif;
+    end;
+in
+    break;
+end
